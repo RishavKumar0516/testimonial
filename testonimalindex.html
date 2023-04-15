@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testinomial section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Customer Review</h1>
+        <div class="review-box">
+            <div id="slide">
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="compl2.jpg" alt="">
+                        <div>
+                            <h3>Riley Olie</h3>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. a. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="compl2.jpg" alt="">
+                        <div>
+                            <h3>Mark Hanery</h3>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. a. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="compl2.jpg" alt="">
+                        <div>
+                            <h3>Gold Berg</h3>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. a. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="compl2.jpg" alt="">
+                        <div>
+                            <h3>Alley philipin</h3>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. a. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="profile">
+                        <img src="compl2.jpg" alt="">
+                        <div>
+                            <h3>Robert Milley</h3>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. a. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- prev and next buttons -->
+            <div class="sidebar">
+                <i class="fa fa-arrow-up" id="prev" aria-hidden="true"></i>
+                <i class="fa fa-arrow-down" id="next" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!--  font awesome icon CDN link -->
+     <script src="https://use.fontawesome.com/c99ec6a45d.js"></script>
+
+     <script>
+         var slide = document.querySelector("#slide");
+         var uparrow = document.querySelector("#prev");
+         var downarrow = document.querySelector("#next");
+
+         uparrow.addEventListener("click",myfunction);
+         downarrow.addEventListener("click",myfun);
+
+             let x = 0;
+
+         function myfunction(){
+             if(x > "-1200"){
+             x = x - 300;
+             slide.style.top = x + "px";
+            }
+            if(x==-1200){
+                uparrow.style.opacity = "0";
+                downarrow.style.opacity = "1";
+            }
+         }
+
+         function myfun(){
+             if(x < "0"){
+             x = x + 300;
+             slide.style.top = x + "px";
+            }
+            if(x==0){
+                downarrow.style.opacity = "0";
+                uparrow.style.opacity = "1";
+            }
+         }
+        
+     </script>
+</body>
+</html>
